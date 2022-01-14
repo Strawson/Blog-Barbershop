@@ -1,4 +1,59 @@
 body {
-    // font-family: "Playfair Display", serif;
-    font-family: "Roboto", sans-serif;
+    font-family: $roboto;
+    font-weight: $light;
   }
+h1 {
+    font-family: $playfair;
+    font-weight: $black;
+    font-style: italic;
+    font-size: $fz-xx-large;
+    @media (max-width: 1200px) {
+      font-size: 40px;
+    }
+  }
+h2 {
+    color: $color-eerie-black;
+    font-family: $playfair;
+    font-weight: $black;
+    font-style: italic;
+    font-size: 30px;
+    line-height: 40px;
+  }
+p {
+    font-family: $roboto;
+    font-weight: $light;
+    font-size: 16px;
+    line-height: 40px;
+    letter-spacing: 0.56px;
+    @media (max-width: 1200px) {
+      line-height: 45px;
+    }
+  }
+
+  .author__text{
+    font-weight: $regular;
+    line-height: 35px;
+    font-size: 14px;
+    color: $color-nickel;
+    @media (max-width: 1200px) {
+      display: none;
+    }
+  }
+
+.author__twitter{
+    color: $color-pink;
+    text-decoration: none;
+    &:hover{
+      color: $color-raisin-black;
+    }
+}
+
+.author__web{
+  color: $color-pink;
+  text-decoration: none;
+  &:hover{
+    color: $color-raisin-black;
+
+  }
+}
+  
