@@ -283,6 +283,21 @@ textarea {
 
 .navbar {
   background-color: #121619;
+  color: white;
+}
+
+.nav-link {
+  color: #fff;
+}
+.nav-link:hover {
+  color: #E56353;
+}
+.nav-link:focus {
+  color: #E56353;
+}
+
+.active {
+  color: #ECBCBA;
 }
 
 .post {
@@ -292,7 +307,7 @@ textarea {
 @media (max-width: 1200px) {
   .post {
     max-width: 314px;
-    margin: 0 auto;
+    margin: 50px auto 75px auto;
   }
 }
 .post time {
@@ -302,8 +317,20 @@ textarea {
   font-family: "Playfair Display", serif;
   font-size: 18px;
 }
+@media (max-width: 1200px) {
+  .post time {
+    margin-bottom: 35px;
+  }
+}
 .post p {
   margin-bottom: 50px;
+}
+.post p a {
+  text-decoration: none;
+  color: #ECBCBA;
+}
+.post p a:hover {
+  color: #222323;
 }
 
 .header__chevron {
@@ -311,6 +338,10 @@ textarea {
   color: #fff;
   bottom: 30px;
   stroke: #fff;
+}
+.header__chevron:hover {
+  color: #ECBCBA;
+  stroke: #D76C69;
 }
 
 .author {
@@ -324,11 +355,29 @@ textarea {
 }
 .author__info {
   text-align: left;
+  font-size: 18px;
+}
+.author__info a {
+  color: #ECBCBA;
+}
+.author__info a:hover {
+  color: #222323;
 }
 @media (max-width: 1200px) {
   .author__info {
     text-align: center;
+    font-size: 16px;
   }
+}
+@media (min-width: 1200px) {
+  .author__info .container {
+    margin: 75px auto 95px auto;
+  }
+}
+
+.pages {
+  background-color: #d1d1d1;
+  height: 134px;
 }
 
 .footer {
