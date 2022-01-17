@@ -344,6 +344,16 @@ textarea {
   stroke: #D76C69;
 }
 
+.post__buttons .btn {
+  border-radius: 50px;
+  font-size: 14px;
+}
+.post__buttons--sharing {
+  color: #fff;
+  background-color: #6C6E70;
+  border-color: #6C6E70;
+}
+
 .author {
   height: 330px;
   border-top: 2px solid #e6e7e7;
@@ -378,6 +388,36 @@ textarea {
 .pages {
   background-color: #d1d1d1;
   height: 134px;
+}
+.pages ul {
+  border-radius: 50px;
+}
+.pages__item {
+  font-family: "Roboto", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+}
+.pages__item a {
+  color: #222323;
+}
+.pages__item:first-child .page-link {
+  border-top-left-radius: 50px;
+  border-bottom-left-radius: 50px;
+}
+.pages__item:last-child .page-link {
+  border-top-right-radius: 50px;
+  border-bottom-right-radius: 50px;
+}
+
+.page-item.active .page-link {
+  background-color: #6C6E70;
+  border-color: #6C6E70;
+}
+@media (max-width: 1200px) {
+  .page-item.active .page-link {
+    background-color: #121619;
+    border-color: #121619;
+  }
 }
 
 .footer {
